@@ -16,5 +16,8 @@ certbot_get_cert EMAIL DOMAIN:
     -m {{ EMAIL }} \
     -d {{ DOMAIN }}
 
+certbot_renew:
+  just certbot renew
+
 install_certbot:
   uv venv && uv pip install --reinstall certbot
