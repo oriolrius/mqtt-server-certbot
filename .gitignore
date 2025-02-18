@@ -1,0 +1,5 @@
+.venv/
+certs/
+certbot/
+*bak
+repomix-output.txt
